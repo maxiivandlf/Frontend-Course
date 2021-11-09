@@ -1,0 +1,60 @@
+:root {
+  /* Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode, */
+  --fuente: Tahoma, Sans-Serif;
+  --color-fondo: #262626;
+  --color-fondo-tarjeta: #ffffff;
+  --color-titulos: #111;
+  --color-text: #777;
+  --color-etiqueta: #ff7a18;
+  --color-txt-tarjeta-grande: #474747;
+  --color-parrafo: #0089c7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1a2a6c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #b21f1f,
+    #1a2a6c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #b21f1f,
+    #1a2a6c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  display: flex;
+  /* border: 2px solid red; */
+  flex-direction: column;
+  background-color: var(--color-fondo-tarjeta);
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 50px 10px black;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.imagen img {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+}
+.container h1 {
+  font-family: var(--fuente);
+  font-weight: 700;
+  color: var(--color-titulos);
+}
+.container p {
+  font-family: var(--fuente);
+  font-weight: 300;
+}
