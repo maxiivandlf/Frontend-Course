@@ -13,11 +13,9 @@
 <img src="./imagesExampleCard/ThirdChallenge.png" width="400px">
 
 4. : @media queries!! : hasta los 574px las tarjetas se mostraran igual que en el punto tres, al crecer mas de 574px se mostraran de la siguiente forma
-** El ancho maximo sera de 930px, deberan estar centradas dentro del html
+   \*\* El ancho maximo sera de 930px, deberan estar centradas dentro del html
 
 <img src="./imagesExampleCard/ComposeBonus.png" width="400px">
-
-
 
 ---
 

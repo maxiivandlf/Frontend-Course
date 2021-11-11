@@ -4,7 +4,7 @@
   --color-fondo: #262626;
   --color-fondo-tarjeta: #ffffff;
   --color-titulos: #111;
-  --color-text: #777;
+  --color-textch: #777;
   --color-etiqueta: #ff7a18;
   --color-txt-tarjeta-grande: #474747;
   --color-parrafo: #0089c7;
@@ -14,6 +14,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
+  font-family: var(--fuente);
+}
+h1 {
+  font-weight: 700;
+  color: var(--color-titulos);
 }
 body {
   background: #1a2a6c; /* fallback for old browsers */
@@ -30,31 +36,81 @@ body {
     #1a2a6c
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.container {
+.contentp {
   display: flex;
-  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.cards {
+  gap: 5px;
+}
+.card1,
+.card2 {
+  display: flex;
   flex-direction: column;
   background-color: var(--color-fondo-tarjeta);
   width: 400px;
   height: 250px;
-  margin: 0 auto;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 10px 5px 50px 10px black;
-  gap: 5px;
-  margin-top: 30px;
+  padding: 20px;
+  margin: 10px;
 }
-
+.card1 p,
+.card2 p {
+  font-weight: 300;
+  color: var(--color-textch);
+}
 .imagen img {
   /* border: 2px solid red; */
   border-radius: 10px;
 }
-.container h1 {
-  font-family: var(--fuente);
-  font-weight: 700;
-  color: var(--color-titulos);
+aside {
+  width: 400px;
+  height: 100%;
 }
-.container p {
-  font-family: var(--fuente);
-  font-weight: 300;
+.card3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  height: 85%;
+  background-color: var(--color-fondo-tarjeta);
+  border-radius: 10px;
+  gap: 10px;
+}
+.image {
+  width: 100%;
+  height: 200px;
+  background-image: url(src/char.jpg);
+}
+.card3 h3 {
+  text-transform: uppercase;
+  color: var(--color-etiqueta);
+  font-weight: 700;
+}
+.card3 img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.footer span {
+  font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  .contentp {
+    flex-direction: row;
+  }
 }
