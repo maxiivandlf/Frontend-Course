@@ -14,6 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
   font-family: var(--fuente);
 }
 h1 {
@@ -43,19 +44,16 @@ body {
   flex-direction: column;
 }
 
-.cards {
-  gap: 5px;
-}
 .card1,
 .card2 {
   display: flex;
   flex-direction: column;
   background-color: var(--color-fondo-tarjeta);
   width: 400px;
-  height: 250px;
+  height: 230px;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .card1 p,
 .card2 p {
@@ -66,37 +64,45 @@ body {
   /* border: 2px solid red; */
   border-radius: 10px;
 }
-aside {
-  width: 400px;
-  height: 100%;
-}
+
+/* Card big */
+
 .card3 {
   display: flex;
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  height: 85%;
+  width: 400px;
   background-color: var(--color-fondo-tarjeta);
   border-radius: 10px;
-  gap: 15px;
+  /* gap: 15px; */
+}
+.header {
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  border-radius: 10px;
 }
 .image {
-  width: 100%;
+  width: 400px;
   height: 200px;
   background-image: url('../char.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 10px;
 }
 .card3 h3 {
   text-transform: uppercase;
   color: var(--color-etiqueta);
   font-weight: 700;
 }
-.card3 img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+
 .card3 span {
   color: var(--color-parrafo);
   font-weight: 600;
@@ -118,5 +124,9 @@ aside {
 @media (min-width: 480px) {
   .contentp {
     flex-direction: row;
+    margin: 20px;
+    gap: 15px;
+  }
+  .card3 {
   }
 }
