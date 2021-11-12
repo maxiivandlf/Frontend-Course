@@ -14,7 +14,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
   font-family: var(--fuente);
 }
 h1 {
@@ -79,12 +78,15 @@ aside {
   height: 85%;
   background-color: var(--color-fondo-tarjeta);
   border-radius: 10px;
-  gap: 10px;
+  gap: 15px;
 }
 .image {
   width: 100%;
   height: 200px;
-  background-image: url(src/char.jpg);
+  background-image: url('../char.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
 }
 .card3 h3 {
   text-transform: uppercase;
@@ -94,6 +96,10 @@ aside {
 .card3 img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.card3 span {
+  color: var(--color-parrafo);
+  font-weight: 600;
 }
 
 .footer {
